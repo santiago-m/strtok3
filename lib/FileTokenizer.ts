@@ -1,7 +1,7 @@
-import { AbstractTokenizer } from './AbstractTokenizer.js';
-import { EndOfStreamError } from 'peek-readable';
-import * as fs from './FsPromise.js';
-import { IFileInfo, IReadChunkOptions } from './types.js';
+import { AbstractTokenizer } from './AbstractTokenizer';
+import { EndOfStreamError } from 'peek-readable/lib';
+import * as fs from './FsPromise';
+import { IFileInfo, IReadChunkOptions } from './types';
 
 export class FileTokenizer extends AbstractTokenizer {
 

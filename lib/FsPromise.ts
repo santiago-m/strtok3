@@ -2,7 +2,7 @@
  * Module convert fs functions to promise based functions
  */
 
-import fs from 'node:fs';
+import * as fs from 'fs';
 
 export interface IReadResult {
   bytesRead: number,

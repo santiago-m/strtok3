@@ -4,7 +4,7 @@ import * as strtok3 from '../lib/index.js';
 import Path from 'node:path';
 import * as fs from '../lib/FsPromise.js';
 import { FileTokenizer } from '../lib/FileTokenizer.js';
-import { EndOfStreamError } from 'peek-readable';
+import { EndOfStreamError } from 'peek-readable/lib';
 import { PassThrough } from 'node:stream';
 import mocha from 'mocha';
 import { Buffer } from 'node:buffer';
@@ -12,7 +12,7 @@ import { Buffer } from 'node:buffer';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
-const __dirname = dirname(fileURLToPath(import .meta.url));
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const {describe, it} = mocha;
 

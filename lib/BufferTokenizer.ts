@@ -1,6 +1,6 @@
-import { IFileInfo, IReadChunkOptions } from './types.js';
-import { EndOfStreamError } from 'peek-readable';
-import { AbstractTokenizer } from './AbstractTokenizer.js';
+import { IFileInfo, IReadChunkOptions } from './types';
+import { EndOfStreamError } from 'peek-readable/lib';
+import { AbstractTokenizer } from './AbstractTokenizer';
 
 export class BufferTokenizer extends AbstractTokenizer {
 
